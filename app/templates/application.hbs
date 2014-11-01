@@ -4,7 +4,9 @@
       <a class="navbar-brand">Ember Reddit</a>
     </div>
     <ul class="nav navbar-nav">
-      <li></li>
+      {{#each}}
+        <li>{{#link-to "subreddit" this}}{{this}}{{/link-to}}</a></li>
+      {{/each}}
     </ul>
   </div><!-- /.container-fluid -->
 </nav>
