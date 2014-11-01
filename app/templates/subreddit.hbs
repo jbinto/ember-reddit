@@ -1,7 +1,5 @@
-<h1>/reddit/{{id}}</h1>
-
 <ul>
-  {{#each data.children}}
-    <li>{{data.title}}</li>
+  {{#each}}
+    <li><a {{bind-attr href=url}}>{{title}}</a> ({{domain}})</li>
   {{/each}}
 </ul>
